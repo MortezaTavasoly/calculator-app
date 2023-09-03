@@ -1,38 +1,283 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=League+Spartan:wght@700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* blue theme */
+.App.blue {
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  margin: 0 auto;
+  background-color: transparent;
+  width: 350px;
+  padding: 25px 30px;
+  height: 600px;
   color: white;
 }
+.App.blue .display {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 10px 30px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: hsl(224, 36%, 15%);
+}
+/* number buttons */
 
-.App-link {
-  color: #61dafb;
+.App.blue .characters {
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 10px;
+}
+.App.blue .numbers {
+  padding: 10px 20px 0;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: wrap;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App.blue .numbers .num {
+  cursor: pointer;
+  border-bottom: 2px solid hsl(28, 16%, 65%);
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60px;
+  height: 35px;
+  border-radius: 5px;
+  margin: 10px 5px 0;
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+}
+.App.blue .numbers .num:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+.App.blue .characters .result-btns {
+  padding: 10px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.App.blue .characters .result-btns button {
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px 0px 20px;
+}
+
+.App.blue .characters .reset-del {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border-bottom: 2px solid hsl(224, 28%, 35%);
+  background-color: hsl(225, 21%, 49%);
+}
+.App.blue .characters .reset-del:hover {
+  background-color: hsl(225, 24%, 61%);
+}
+.App.blue .characters .result-btns .result {
+  border-bottom: 2px solid hsl(6, 70%, 34%);
+  background-color: hsl(6, 63%, 50%);
+}
+.App.blue .characters .result-btns .result:hover {
+  background-color: hsl(6, 54%, 58%);
+}
+/*  */
+
+/* white theme */
+
+/*  */
+.App.white {
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  margin: 0 auto;
+  background-color: transparent;
+  width: 350px;
+  padding: 25px 30px;
+  height: 600px;
+}
+.App.white .display {
+  color: hsl(60, 10%, 19%);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 10px 30px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 93%);
+}
+/* number buttons */
+
+.App.white .characters {
+  background-color: hsl(0, 5%, 81%);
+  border-radius: 10px;
+}
+.App.white .numbers {
+  padding: 10px 20px 0;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: wrap;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.App.white .numbers .num {
+  cursor: pointer;
+  border-bottom: 2px solid hsl(28, 16%, 65%);
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60px;
+  height: 35px;
+  border-radius: 5px;
+  margin: 10px 5px 0;
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+}
+.App.white .numbers .num:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+.App.white .characters .result-btns {
+  padding: 10px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.App.white .characters .result-btns button {
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px 0px 20px;
+}
+
+.App.white .characters .reset-del {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border-bottom: 2px solid hsl(185, 58%, 25%);
+  background-color: hsl(185, 42%, 37%);
+}
+.App.white .characters .reset-del:hover {
+  background-color: hsl(225, 24%, 61%);
+}
+.App.white .characters .result-btns .result {
+  border-bottom: 2px solid hsl(6, 70%, 34%);
+  background-color: hsl(6, 63%, 50%);
+}
+.App.white .characters .result-btns .result:hover {
+  background-color: hsl(6, 54%, 58%);
+}
+/*  */
+
+/* purple theme */
+
+/*  */
+.App.purple {
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  margin: 0 auto;
+  background-color: transparent;
+  width: 350px;
+  padding: 25px 30px;
+  height: 600px;
+  color: white;
+}
+.App.purple .display {
+  color: hsl(52, 100%, 62%);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 10px 30px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: hsl(268, 71%, 12%);
+}
+/* number buttons */
+
+.App.purple .characters {
+  background-color: hsl(268, 71%, 12%);
+  border-radius: 10px;
+}
+.App.purple .numbers {
+  padding: 10px 20px 0;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: wrap;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.App.purple .numbers .num {
+  cursor: pointer;
+  border-bottom: 2px solid hsl(290, 70%, 36%);
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60px;
+  height: 35px;
+  border-radius: 5px;
+  margin: 10px 5px 0;
+  color: hsl(52, 100%, 62%);
+  background-color: hsl(268, 47%, 21%);
+}
+.App.purple .numbers .num:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+.App.purple .characters .result-btns {
+  padding: 10px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.App.purple .characters .result-btns button {
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px 0px 20px;
+}
+
+.App.purple .characters .reset-del {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border-bottom: 2px solid hsl(285, 91%, 52%);
+  background-color: hsl(281, 89%, 26%);
+}
+.App.purple .characters .reset-del:hover {
+  background-color: hsl(225, 24%, 61%);
+  color: white;
+}
+.App.purple .characters .result-btns .result {
+  border-bottom: 2px solid hsl(177, 92%, 70%);
+  background-color: hsl(176, 100%, 44%);
+  color: black;
+}
+.App.purple .characters .result-btns .result:hover {
+  background-color: hsl(6, 54%, 58%);
 }

@@ -1,0 +1,116 @@
+.blue .theme {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 20px;
+}
+.blue .theme .theme-container {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blue .theme .theme-container .themes {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blue .theme .theme-container .themes .colors {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  margin: 3px 5px;
+  border-radius: 50%;
+}
+.blue .theme .theme-container .themes .blue {
+  background-color: hsl(222, 26%, 31%);
+}
+.blue .theme .theme-container .themes .white {
+  background-color: hsl(0, 0%, 90%);
+}
+.blue .theme .theme-container .themes .purple {
+  background-color: hsl(268, 71%, 12%);
+}
+/* white */
+.white .theme {
+  background-color: black;
+  color: hsl(60, 10%, 19%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 20px;
+}
+.white .theme .theme-container {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.white .theme .theme-container .themes {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.white .theme .theme-container .themes .colors {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  margin: 3px 5px;
+  border-radius: 50%;
+}
+.white .theme .theme-container .themes .blue {
+  background-color: hsl(222, 26%, 31%);
+}
+.white .theme .theme-container .themes .white {
+  background-color: hsl(0, 0%, 90%);
+}
+.white .theme .theme-container .themes .purple {
+  background-color: hsl(268, 71%, 12%);
+}
+/* purple */
+.purple .theme {
+  background-color: black;
+  color: hsl(52, 100%, 62%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 20px;
+}
+.purple .theme .theme-container {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.purple .theme .theme-container .themes {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.purple .theme .theme-container .themes .colors {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  margin: 3px 5px;
+  border-radius: 50%;
+}
+.purple .theme .theme-container .themes .blue {
+  background-color: hsl(222, 26%, 31%);
+}
+.purple .theme .theme-container .themes .white {
+  background-color: hsl(0, 0%, 90%);
+}
+.purple .theme .theme-container .themes .purple {
+  background-color: hsl(268, 75%, 9%);
+}
